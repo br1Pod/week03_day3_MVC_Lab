@@ -5,9 +5,9 @@
     <body>
         <h1>Orders</h1>
         <ul>
-            {% for order in Orders %}
+            {% for order in orders %}
             <li>
-                <p>order ID: {{order.id}}, Date: {{order.date}}, Customer Name: {{order.cust_name}}, Book: {{order.book_name}}, author: {{order.author_name}}, quantity: {{order.quantity}} </p>
+                <p>Order ID: {{order.id}}, Date: {{order.date}}, Customer Name: {{order.cust_name}}, Book: {{order.book_name}}, author: {{order.author_name}}, quantity: {{order.quantity}} </p>
             </li>
             {% endfor %}
         </ul>
