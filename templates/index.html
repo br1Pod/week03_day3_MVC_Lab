@@ -7,7 +7,8 @@
         <ul>
             {% for order in orders %}
             <li>
-                <p>Order ID: {{order.id}}, Date: {{order.date}}, Customer Name: {{order.cust_name}}, Book: {{order.book_name}}, author: {{order.author_name}}, quantity: {{order.quantity}} </p>
+                <p>Order ID: <a href = 'http://localhost:5000/orders/{{orders.index(order)}}'>{{order.id}}</a></p>
+
             </li>
             {% endfor %}
         </ul>
