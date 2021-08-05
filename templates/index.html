@@ -4,15 +4,22 @@
         <title>Orders</title>
     </head>
     <body>
-        <h1>Orders</h1>
-        <ul>
-            {% for order in orders %}
-            <li>
-                <p>Order ID: <a href = 'http://localhost:5000/orders/{{orders.index(order)}}'>{{order.id}}</a></p>
+        <header>
+            <h1>Flask Bookshop</h1>
+        </header>
+        <main>
+            <section class = "card">
+            <h2>Customer Orders</h2>
+                <dl>
+                    {% for order in orders %}
+                    <dt>Order ID: </dt>
+                    <dd><a href = 'http://localhost:5000/orders/{{orders.index(order)}}'>{{order.id}}</a></dd>
 
-            </li>
-            {% endfor %}
-        </ul>
+                    </dt>
+                    {% endfor %}
+                </dl>
+            </section>
+        </main>
 
 
     </body>

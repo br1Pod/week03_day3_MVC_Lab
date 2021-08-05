@@ -4,8 +4,43 @@
         <title>Order Details</title>
     </head>
     <body>
-        <h1>Order Details</h1>
-        <p>Customer Name: {{order.customer.name}}, {{order.customer.age}}</p>
-        <p>Order ID: {{order.id}}, Date: {{order.date}}, Book: {{order.book_name}}, Author: {{order.book_author}}, Quantity: {{order.quantity}}</p>
+        <header>
+            <h1>Order Details</h1>
+        </header>
+        <main>
+            
+            <section class = "card">
+                <h2>Order Details</h2>
+                <dl>
+                    <dt>Date: </dt>
+                    <dd>{{order.order_date}}</dd>
+
+                    <dt>Order ID: </dt>
+                    <dd>{{order.id}}</dd>
+
+                    <dt>Book: </dt>
+                    <dd>{{order.title}}</dd>
+
+                    <dt>Author: </dt>
+                    <dd>{{order.author}}</dd>
+
+                    <dt>Quantity: </dt>
+                    <dd>{{order.quantity}}</dd>
+                </dl>
+            </section>
+            <section class = "card">
+                <h2>Customer Details</h2>
+                <dl>
+                    <dt>Name: </dt>
+                    <dd>{{order.customer.fname}}, {{order.customer.surname}}</dd>
+
+                    <dt>Address: </dt>
+                    <dd>{{order.customer.address}}</dd>
+
+                    <dt>Postcode: </dt>
+                    <dd>{{order.customer.postcode}}</dd>
+                </dl>
+            </section>
+        </main>
     </body>
 </html>
